@@ -1,7 +1,11 @@
-import { add } from "../src/add";
+import { getPrimeFactors } from "../src/Prime";
 
-describe("add", () => {
-  it("should add two numbers", () => {
-    expect(add(1, 2)).toBe(3);
+describe("getPrimeFactors", () => {
+  it("should calculate prime factors", () => {
+    expect(getPrimeFactors(2)).toEqual([2]);
+    expect(getPrimeFactors(4)).toEqual([2, 2]);
+    expect(getPrimeFactors(8)).toEqual([2, 2, 2]);
+    expect(getPrimeFactors(9)).toEqual([3, 3]);
+    expect(getPrimeFactors(12)).toEqual([2, 2, 3]);
   });
 });
