@@ -8,6 +8,4 @@ export function getPrimeFactors(value: number): number[] {
   }
   if (value > 1) re.push(value);
   return re;
-
-
 }
