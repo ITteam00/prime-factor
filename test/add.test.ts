@@ -10,6 +10,7 @@ describe("getPrimeFactors", () => {
     expect(getPrimeFactors(9)).toEqual([3, 3]);
 
     expect(getPrimeFactors(15)).toEqual([3, 5]);
+    expect(getPrimeFactors(83)).toEqual([83]);
 
 
   });
