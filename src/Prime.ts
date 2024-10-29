@@ -4,10 +4,12 @@ export function getPrimeFactors(value: number): number[] {
     re.push(2);
     value /= 2;
   }
-  if (value % 3 == 0) {
+  while (value % 3 == 0) {
     re.push(3);
     value /= 3;
   }
+
+  if (value > 1) re.push(value);
 
   return re;
 
